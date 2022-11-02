@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario DETRAN</title>
+    <div>
+      <img
+        src="https://seeklogo.com/images/D/detran-mg-logo-0CA6F6E080-seeklogo.com.png"
+        alt=""
+      />
+    </div>
+    <style>
+      body {
+        /*background-color: rgb(109, 1, 1);*/
+        background-image: linear-gradient(
+          to right,
+          rgb(247, 240, 240),
+          rgb(109, 6, 6)
+        );
+      }
+      .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: aliceblue;
+        padding: 15px;
+        border-radius: 15px;
+        width: 20%;
+      }
+      fieldset {
+        border: 3px solid rgb(148, 21, 21);
+      }
+      legend {
+        border: 3px solid rgb(148, 21, 21);
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+      }
+      input {
+        padding: 6px;
+        margin-bottom: 10px;
+        border-radius: 16px;
+        width: 200px;
+        display: flex;
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      #submit {
+        background-image: linear-gradient(
+          to right,
+          rgb(109, 8, 8),
+          rgb(109, 6, 6)
+        );
+        width: 100%;
+        border: none;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form action="/action_page.php">
+        <fieldset>
+          <legend><b>Fórmulario de Cadastro</b></legend>
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            id="name"
+            name="fname"
+            placeholder="Insira seu Nome"
+          />
+
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" placeholder="Insira sua Idade" />
+
+          <label for="prof">Profissao:</label>
+          <input type="text" id="prof" placeholder="Insira sua Profissão" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Insira seu email" />
+
+          <label for="telefone">Telefone:</label>
+          <input type="text" id="telefone" placeholder="(31) 99999-9999" />
+
+          <label for="dataPreenchemento">Data de Preenchemento:</label>
+          <input
+            type="date"
+            id="dataPreenchemento"
+            placeholder="Insira sua Data de Preenchemento"
+          />
+          <input type="submit" value="Submit" id="submit" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
